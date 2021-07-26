@@ -1,0 +1,10 @@
+<!-- Opciones del menú -->
+<ul class="list-group">
+    <li *ngFor="let opcion of opciones; let i=index"
+        class="list-group-item"
+        [routerLink]="opcion.ruta"
+        [style.background-color]="(i >= 0 && i<=2) ? '#61cd73' : 'white'">
+        
+        {{ opcion.nombre }}
+    </li>
+</ul>
